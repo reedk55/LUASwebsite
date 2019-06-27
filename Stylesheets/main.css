@@ -13,9 +13,31 @@ html, body {
     overflow-x: hidden;
 }
 
+.offset:before {
+    display: block;
+    content: "";
+    height: 5rem;
+    margin-top: -5rem;
+}
+
+.heading {
+    margin-bottom: 1.5rem;
+}
+
+.underline {
+    width: 4rem;
+    height: 0.2rem;
+    background-color: #0070FF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+}
+
+/* NAVIGATION */
+
 .navbar{
     letter-spacing: 0.05rem;
-    background-color: white;
+    background-color: white !important;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     font-weight: 400;
@@ -29,17 +51,29 @@ html, body {
     padding-right: 0.7rem;
 }
 
-.navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link {
     color: rgb(91, 91, 94);
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #0070FF !important;
+}
+
+
+/* LANDING PAGE */
+
+#home {
+    margin-bottom: 5rem;
 }
 
 .landing {
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../Images/nesa-by-makers-737053-unsplash.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../Images/landing-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    box-sizing: border-box;  
+    box-sizing: border-box; 
 }
 
 .caption {
@@ -53,7 +87,7 @@ html, body {
     font-size: 4rem;
     letter-spacing: 0.3rem;
     text-shadow: 0.1rem 0.1rem .8rem black;
-    padding-bottom: 3rem;
+    padding-bottom: 2.8rem;
 }
 
 .caption p {
@@ -62,55 +96,83 @@ html, body {
     text-shadow: 0.1rem 0.1rem 0.5rem black;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1.6rem;
 }
 
-
-#about-us {
-    height: 1000px;
-    border: 3px solid red;
+.btn-lg {
+    border-width: medium;
+    padding: 0.6rem 1.5rem;
+    font-size: 1.3rem;
+    text-shadow: 0.1rem 0.1rem .8rem black;;
 }
 
-#services {
-    height: 1000px;
-    border: 3px solid blue;
-}
-
-#contact-us {
+.btn-lg:hover {
+    background-color: #0070FF;
     color: white;
-    padding: 3em 0em 1em 0em; 
-    background-color: #555; 
-    text-align: center; 
-    letter-spacing: 0.8px;
+    border-color: #0070FF;
 }
+
+
+/* SERVICES */
+
+#services{
+    margin-bottom: 15rem;
+    max-width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-desc {
+    margin-bottom: 3.5rem;
+    letter-spacing: 0.03rem;
+}
+
+.service-row {
+    margin-bottom: 4.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.service-heading {
+    color: #0070FF;
+    margin-bottom: 2rem;
+}
+
+.service-description {
+    text-align: justify;
+}
+
+.service-img {
+    width: 100%;
+}
+
+.icon{
+    color: #0070FF;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* GET STARTED */
 
 #get-started {
-    height: 900px;
     box-shadow: 10px 10px 5px rgb(163, 163, 163);
-    width: 50vw;
-    margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 50px;
-    margin-bottom: 200px;
-    background-color: #F0F0F0;
     border: 1px solid rgb(167, 167, 167);
+    width: 55vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f1f1f1;
+    margin-bottom: 15rem;
 }
 
-#about-us h2{
-    margin: 0;
-    margin-top: 5px; 
+#get-started h2 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
-#services h2{
-    margin:0;
-}
-
-#contact-us h2{
-    margin:0;
-}
-
-#get-started h2{
-    margin: 0;
+#get-started p {
+    margin-bottom: 2rem;
+    letter-spacing: 0.03rem;
 }
 
 #submit-btn {
@@ -122,11 +184,24 @@ html, body {
 
 #submit-btn-div {
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 #message-box {
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+
+
+/* CONTACT US */
+
+#contact-us {
+    color: white;
+    padding: 3em 0em 1em 0em; 
+    background-color: #555; 
+    text-align: center; 
+    letter-spacing: 0.8px;
 }
 
 #icon-phone {
@@ -142,26 +217,38 @@ html, body {
 }
 
 .copyright {
-    width: 100%;
+    width: 90%;
     border-top: 0.2rem solid white;
     margin-top: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 
-
-
-/*--- Media Queries ---*/
+/* MEDIA QUERIES */
 
 @media (max-width: 767px) {
     
     .caption h1 {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
         letter-spacing: 0.1rem;
         padding-bottom: 2rem;
     }
     
     .caption p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+    }
+
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    #get-started {
+        width: 85vw;
+    }
+
+    .service-img {
+        margin-bottom: 3rem;
     }
 }
 

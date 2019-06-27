@@ -18,14 +18,14 @@ cost-efficiency
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/816cd9bf52.js"></script>
         <link href="Stylesheets/main.css" type="text/css" rel="stylesheet">
         <title>Level Up Advanced Solutions</title>
     </head>
     <body data-spy="scroll" data-target="#navbarResponsive">
 
         <!--- Start Home Section --->
-        <div class="home">
+        <div id="home">
 
         <!-- Start Navigation -->        
             <nav id="navigation_bar" class="navbar navbar-expand-md navbar-light bg-light fixed-top" role="navigation">
@@ -41,8 +41,8 @@ cost-efficiency
                         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about-us">About&nbsp;Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact-us">Contact&nbsp;Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="#get-started">Get&nbsp;Started</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact-us">Contact&nbsp;Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -53,6 +53,7 @@ cost-efficiency
                 <div class="caption text-center">
                         <h1 class="display-3 text-white text-center">Advance your ideas to the next level</h1>
                         <p class="text-white text-center">Level Up Advanced Solutions is a professional software development company focused on developing custom software and web-based solutions of the highest quality to help our clients reach their business goals.</p>
+                        <a class="btn btn-outline-light btn-lg" href="#get-started">Get Started</a>
                 </div>
             </div>
         </div>
@@ -62,55 +63,99 @@ cost-efficiency
         <!--- Start About Us Section --->
         <div id="about-us" class="offset">
             <div class="container-fluid">
-                <h2 class="text-center mt-5">About Us</h2>
+                <h2 class="heading text-center">About Us</h2>
+                <div class="underline"></div>
             </div>
         </div>
         <!--- End About Us Section --->
         
         <!--- Start Services Section --->
         <div id="services" class="offset">
-            <div class="container">
-                <h2 class="text-center mt-5">Our Services</h2>
-                <p id="services-content" class="text-center">Level Up is proud to offer a wide array of cross-platform software and web-based development services, but this list is by no means exhaustive. Our developers are experienced, well-educated, and resourceful, so if you want to work with us but you don't see the particular service you need listed below, give us a call or send us a message and we'll see if our talents are suitable for your needs. We promise that we will only agree to do a job if we are absolutely certain that we can deliver a final product that meets your every expectation.</p>
+            <div id="services-content">
+                    <h2 class="heading text-center">Our Services</h2>
+                    <div class="underline"></div>
+                    <p class="services-desc text-center ">Level Up is proud to offer a wide array of cross-platform software and web-based development services, but this list is by no means exhaustive. Our developers are experienced, well-educated, and resourceful, so if you want to work with us but you don't see the particular service you need listed below, give us a call or send us a message and we'll see if our talents are suitable for your needs. We promise that we will only agree to do a job if we are absolutely certain that we can deliver a final product that meets your every expectation.</p>
+
+                <div class="row service-row">
+                    <div class="col-md-7">
+                        <h4 class="service-heading text-center">Responsive Web Development</h4>
+                        <p class="service-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsa consequatur obcaecati eius sequi qui nemo. Tenetur pariatur cupiditate assumenda laboriosam esse consequatur sapiente asperiores, et quas rerum hic minus, culpa distinctio praesentium voluptatum. Ut delectus labore earum expedita assumenda ducimus incidunt exercitationem? Nisi rem quasi inventore labore adipisci blanditiis.</p>
+                    </div> 
+                    <div class="col-md-5">
+                        <img class="service-img" src="Images/web-development-pexels.jpeg">
+                    </div>   
+                </div> 
+
+                <div class="row service-row">
+                    <div class="col-md-7">
+                        <h4 class="service-heading text-center">Cross-platform Mobile App Development</h4>
+                        <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsa consequatur obcaecati eius sequi qui nemo. Tenetur pariatur cupiditate assumenda laboriosam esse consequatur sapiente asperiores, et quas rerum hic minus, culpa distinctio praesentium voluptatum. Ut delectus labore earum expedita assumenda ducimus incidunt exercitationem? Nisi rem quasi inventore labore adipisci blanditiis.</p>
+                    </div> 
+                    <div class="col-md-5 order-md-first">
+                        <img class="service-img" src="Images/app-dev-unsplash.jpg">
+                    </div>   
+                </div>
+                
+                <div class="row service-row">
+                    <div class="col-md-7">
+                        <h4 class="service-heading text-center">IT Consulting</h4>
+                        <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsa consequatur obcaecati eius sequi qui nemo. Tenetur pariatur cupiditate assumenda laboriosam esse consequatur sapiente asperiores, et quas rerum hic minus, culpa distinctio praesentium voluptatum. Ut delectus labore earum expedita assumenda ducimus incidunt exercitationem? Nisi rem quasi inventore labore adipisci blanditiis.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="service-img" src="Images/tech-support-pexels.jpeg">
+                    </div>    
+                </div> 
+
+                <div class="row service-row">
+                    <div class="col-md-7">
+                        <h4 class="service-heading text-center">Data Analysis</h4>
+                        <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsa consequatur obcaecati eius sequi qui nemo. Tenetur pariatur cupiditate assumenda laboriosam esse consequatur sapiente asperiores, et quas rerum hic minus, culpa distinctio praesentium voluptatum. Ut delectus labore earum expedita assumenda ducimus incidunt exercitationem? Nisi rem quasi inventore labore adipisci blanditiis.</p>
+                    </div> 
+                    <div class="col-md-5 order-md-first">
+                        <img class="service-img" src="Images/data-analysis-unsplash.jpg">
+                    </div>   
+                </div>
             </div>
         </div>
         <!--- End Services Section --->
         
         <!--- Start Get Started Section --->
         <div id="get-started" class="offset">
-            <h2 class="text-center pt-5">Let's talk about your ideas</h2>
-            <p class="text-center py-4">Send us a message and we will call you shortly to schedule a time to meet that's convenient for you.</p>
-            <form class="get-started-form" action="">
-                <div class="form-group col-md-10 offset-md-1">
-                    <label for="firstName">First Name</label>
-                    <input type="text" class="form-control" id="firstName">
-                </div>
-                <div class="form-group col-md-10 offset-md-1">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" class="form-control" id="lastName">
-                </div>
-                <div class="form-group col-md-10 offset-md-1">
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="text" class="form-control" id="phoneNumber">
-                </div>
-                <div class="form-group col-md-10 offset-md-1">
-                    <label for="emailAddress">Email Address</label>
-                    <input type="text" class="form-control" id="emailAddress">
-                </div>
-                <div class="form-group col-md-10 offset-md-1">
-                    <label for="company">Company</label>
-                    <small id="companyOptional" class="text-muted">
-                        (Optional)
-                    </small>
-                    <input type="text" class="form-control" id="company">
-                </div>
-                <div class="form-group col-md-10 offset-md-1" id="message-box">
-                    <textarea class="form-control" id="message" rows="5" placeholder="How can we help you?"></textarea>
-                </div>
-                <div id="submit-btn-div">
-                <button type="submit" class="btn col-md-10" id="submit-btn">Submit</button>
-                </div>
-            </form>
+            <div class="container">
+                <h2 class="heading text-center">Let's talk about your ideas</h2>
+                <p class="text-center">Send us a message and we will call you shortly to schedule a time to meet that's convenient for you.</p>
+                <form class="get-started-form" action="">
+                    <div class="form-group col-md-10 offset-md-1">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                    <div class="form-group col-md-10 offset-md-1">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName">
+                    </div>
+                    <div class="form-group col-md-10 offset-md-1">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" class="form-control" id="phoneNumber">
+                    </div>
+                    <div class="form-group col-md-10 offset-md-1">
+                        <label for="emailAddress">Email Address</label>
+                        <input type="text" class="form-control" id="emailAddress">
+                    </div>
+                    <div class="form-group col-md-10 offset-md-1">
+                        <label for="company">Company</label>
+                        <small id="companyOptional" class="text-muted">
+                            (Optional)
+                        </small>
+                        <input type="text" class="form-control" id="company">
+                    </div>
+                    <div class="form-group col-md-10 offset-md-1" id="message-box">
+                        <textarea class="form-control" id="message" rows="5" placeholder="How can we help you?"></textarea>
+                    </div>
+                    <div id="submit-btn-div">
+                    <button type="submit" class="btn col-md-9" id="submit-btn">Send</button>
+                    </div>
+                </form>
+            </div>
         </div>
         <!--- End Get Started Section --->
         
