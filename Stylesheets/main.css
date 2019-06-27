@@ -1,0 +1,171 @@
+/*
+     File:      main.css 
+*/
+
+
+/* Applies to all pages */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "ARS Maquette","Arial",sans-serif;
+    font-weight: 300; 
+    color:#555;
+    overflow-x: hidden;
+}
+
+.navbar{
+    letter-spacing: 0.05rem;
+    background-color: white;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.navbar-brand img {
+    height: 3.5rem;
+}
+
+.navbar-nav li {
+    padding-right: 0.7rem;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(91, 91, 94);
+}
+
+.landing {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../Images/nesa-by-makers-737053-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;  
+}
+
+.caption {
+    width: 100%;
+    position: absolute;
+    top: 33%;
+    opacity: 0.9;
+}
+
+.caption h1 {
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    text-shadow: 0.1rem 0.1rem .8rem black;
+    padding-bottom: 3rem;
+}
+
+.caption p {
+    font-size: 1.5rem;
+    width: 50%;
+    text-shadow: 0.1rem 0.1rem 0.5rem black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#about-us {
+    height: 1000px;
+    border: 3px solid red;
+}
+
+#services {
+    height: 1000px;
+    border: 3px solid blue;
+}
+
+#contact-us {
+    color: white;
+    padding: 3em 0em 1em 0em; 
+    background-color: #555; 
+    text-align: center; 
+    letter-spacing: 0.8px;
+}
+
+#get-started {
+    height: 900px;
+    box-shadow: 10px 10px 5px rgb(163, 163, 163);
+    width: 50vw;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    background-color: #F0F0F0;
+    border: 1px solid rgb(167, 167, 167);
+}
+
+#about-us h2{
+    margin: 0;
+    margin-top: 5px; 
+}
+
+#services h2{
+    margin:0;
+}
+
+#contact-us h2{
+    margin:0;
+}
+
+#get-started h2{
+    margin: 0;
+}
+
+#submit-btn {
+    background-color: #0070FF;
+    color: white;
+    max-width: 80%;
+    border-radius: 0px;
+}
+
+#submit-btn-div {
+    text-align: center;
+}
+
+#message-box {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#icon-phone {
+    display: block; 
+    margin-bottom: 1rem; 
+    font-size: 3.5em; 
+}
+
+#icon-envelope {
+    display: block; 
+    margin-bottom: 1rem; 
+    font-size: 3.5em; 
+}
+
+.copyright {
+    width: 100%;
+    border-top: 0.2rem solid white;
+    margin-top: 3rem;
+}
+
+
+
+
+/*--- Media Queries ---*/
+
+@media (max-width: 767px) {
+    
+    .caption h1 {
+        font-size: 2.6rem;
+        letter-spacing: 0.1rem;
+        padding-bottom: 2rem;
+    }
+    
+    .caption p {
+        font-size: 1.3rem;
+    }
+}
+
+
+
+
+ 
