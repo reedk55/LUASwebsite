@@ -11,6 +11,7 @@ html, body {
     font-weight: 300; 
     color:#555;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .offset:before {
@@ -112,11 +113,23 @@ html, body {
     border-color: #0070FF;
 }
 
+/* ABOUT US */
+
+#about-us {
+    margin-bottom: 5rem;
+}
+
+.about-us-desc {
+    letter-spacing: 0.03rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
 
 /* SERVICES */
 
 #services{
-    margin-bottom: 15rem;
+    margin-bottom: 12rem;
     max-width: 85vw;
     margin-left: auto;
     margin-right: auto;
