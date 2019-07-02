@@ -239,7 +239,7 @@ html, body {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 767px) {
+@media (max-width: 899px) {
     
     .caption h1 {
         font-size: 2.4rem;
@@ -264,6 +264,7 @@ html, body {
         margin-bottom: 3rem;
     }
 }
+
 
 
 
