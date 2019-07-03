@@ -116,13 +116,14 @@ html, body {
 /* ABOUT US */
 
 #about-us {
+    width: 80vw;
     margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-us-desc {
     letter-spacing: 0.03rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
 }
 
 
@@ -239,16 +240,18 @@ html, body {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 899px) {
+@media (max-width: 1200px) {
     
     .caption h1 {
-        font-size: 2.4rem;
+        font-size: 3rem;
         letter-spacing: 0.1rem;
         padding-bottom: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     
     .caption p {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     .btn-lg {
@@ -263,6 +266,22 @@ html, body {
     .service-img {
         margin-bottom: 3rem;
     }
+}
+
+@media (max-width: 767px) {
+
+    .caption h1 {
+        font-size: 2.5rem;
+        letter-spacing: 0.1rem;
+        padding-bottom: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .caption p {
+        font-size: 1.1rem;
+    }
+
 }
 
 
